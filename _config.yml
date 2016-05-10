@@ -14,9 +14,9 @@ description: > # this means to ignore newlines until "baseurl:"
   and timeless church - focusing on worshipping God, studying God's word, serving each other
   and the community and seeking to make disciples for Jesus Christ. 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://127.0.0.1:4000" # the base hostname & protocol for your site
+url: "http://biblebaptistmattoon.github.io" # the base hostname & protocol for your site
 twitter_username: BBCmattoon
-github_username:  jekyll
+github_username:  biblebaptistmattoon
 collections:
   ministries:
     output: true
