@@ -1,0 +1,27 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Bible Baptist Church
+email: pastorryanhayden@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Bible Baptist Church is an independent Baptist Church in Mattoon, IL.  We are located
+  at S 34th and Marion Ave on the southwest side of Mattoon.  We strive to be a biblical 
+  and timeless church - focusing on worshipping God, studying God's word, serving each other
+  and the community and seeking to make disciples for Jesus Christ. 
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://127.0.0.1:4000" # the base hostname & protocol for your site
+twitter_username: BBCmattoon
+github_username:  jekyll
+collections:
+  ministries:
+    output: true
+    permalink: /ministries/:path/
+
+# Build settings
+markdown: kramdown
+
