@@ -1,15 +1,21 @@
 ---
 layout: default
 ---
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-
-  <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
-    <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
-  </header>
-
-  <div class="post-content" itemprop="articleBody">
-    {{ content }}
-  </div>
-
-</article>
+<div class="blog-entry-page">
+    <div class="blog-entry">
+    {% if page.featured %}
+            <img src="{{ page.featured }}" alt="" class="entry-image">
+    {% else %}
+            <img src="http://storage.biblebaptistmattoon.org/media/blog-default.jpg" alt="" class="entry-image">
+    {% endif %}
+            <div class="entry-text">
+            <div class="entry-header">
+                <h3><a href="#">{{page.title}}</a></h3>
+                <p class="description"><strong>Posted On:</strong> {{ page.date | date: "%b %-d, %Y" }} • <strong>Author:</strong> {{page.author}} • <strong>Category:</strong> {% for item in page.categories %}{{item}} {%endfor%}</p>
+            </div><!--/entry-text-->
+            <div class="entry-description">
+                {{content}}
+            </div><!--/entry-description-->
+            </div><!//entry-text-->
+        </div><!--/blog-entry-->
+</div>
